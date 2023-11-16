@@ -10,8 +10,21 @@
     <input class="input-custom" type="text" id="description" [formControlName]="'description'">
   </label>
   <br>
+    <label for="studentID">Étudiant:</label>
+  <select id="studentID" formControlName="studentID">
+    <option *ngFor="let student of students" [value]="student.id">
+      {{student.id}} - {{student.nom}} {{student.prenom}}
+    </option>
+  </select>
+
+    <label for="major">Filière:
+    <select id="major" name="major" [formControlName]="'major'">
+      <!-- Utilisation de *ngFor pour itérer sur les valeurs de l'enum Major -->
+      <option *ngFor="let major of majorValues()" [value]="major">{{ major }}</option>
+    </select>  </label>
+  <br>
   <button type="submit" class="btn-custom" (click)="addTicket()">Create</button>
 </form>
 
 <!-- Uncomment below to see your form structure and how it changes-->
-<!--<br><br>{{ticketForm.getRawValue() | json}}-->
+<br><br>{{ticketForm.getRawValue() | json}}

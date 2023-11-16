@@ -7,3 +7,18 @@
 .ticket:hover {
   cursor: pointer;
 }
+
+.archived{
+  color:blue;
+  border-radius: 25px;
+  padding:10px;
+  border-color: blue;
+}
+
+.archived:hover{
+  background-color:blue;
+  color:white;
+  border-radius: 25px;
+  padding:10px;
+  border-color: blue;
+}

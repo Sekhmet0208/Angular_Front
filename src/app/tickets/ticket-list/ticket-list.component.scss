@@ -13,3 +13,18 @@ app-ticket {
   align-items: center;
   justify-content: center;
 }
+
+.archivé{
+    color:blue;
+    border-radius: 25px;
+    padding:10px;
+    border-color: blue;
+}
+
+.archivé:hover{
+    background-color:blue;
+    color:white;
+    border-radius: 25px;
+    padding:10px;
+    border-color: blue;
+}
