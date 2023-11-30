@@ -30,8 +30,7 @@ export class TicketFormComponent implements OnInit {
       title: [''],
       description: [''],
       major: [''],
-      studentID: ['']
-      
+      studentID: 1
     });
     // You can also add validators to your inputs such as required, maxlength or even create your own validator!
     // More information: https://angular.io/guide/reactive-forms#simple-form-validation
